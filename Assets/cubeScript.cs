@@ -8,7 +8,7 @@ public class cubeScript : MonoBehaviour
     public int face;
     static Rigidbody rb;
     public static Vector3 diceVelocity;
-    public Text dice;
+    public Text Dice;
     bool playdice = false;
 
     // Use this for initialization
@@ -41,10 +41,10 @@ public class cubeScript : MonoBehaviour
     // Afficher la face du dé
     IEnumerator ShowFace()
     {
-        dice.enabled = true;
-        dice.GetComponent<Text>().text = face.ToString();
+        Dice.enabled = true;
+        Dice.GetComponent<Text>().text = face.ToString();
         yield return new WaitForSeconds(2f);
-        dice.enabled = false;
+        Dice.enabled = false;
     }
 
     // Lancer le dé
