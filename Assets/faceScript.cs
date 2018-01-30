@@ -16,7 +16,7 @@ public class faceScript : MonoBehaviour {
     {
         if (other.tag == "plateau")
         {
-            //donner le numéro de la face du dé
+            //donner le numéro de la face du dé cubeScript (utiliser "script" et "gameObject")
             
         }
     }
